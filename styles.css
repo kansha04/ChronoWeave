@@ -140,7 +140,7 @@ li, a, button {
     flex-direction: column;
     gap: 0.4rem;
     width: 80%;
-    margin: 0 auto;
+    margin: 5% auto;
 }
 .heading h2 {
     margin: 0 auto; 
@@ -182,63 +182,69 @@ li, a, button {
         grid-column: auto;
     }
 }
-/*Staff/Team*/
+/* Staff/Team */
 .team {
     background-color: #074973;
     color: aliceblue;
-    font-family: JOsefin Sans;
-    height: 100%;
-    max-width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
     padding: 2% 2% 5% 2%;
     margin: 0 auto;
     display: grid;
-    row-gap: 5%;
-    column-gap: 2%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 90%;
-    align-items: center;
-}
-.team h2 {
-    margin: 0 auto;
-    max-width: 50%;
+    gap: 2%;
+    grid-template-columns: 1fr; /* Mobile: single column */
     text-align: center;
-    grid-column: 1 / span 3;
+    padding-bottom: 3rem;
 }
+
+#heading {
+    margin: 2% auto;
+    max-width: 80%;
+}
+
 .team-member {
     width: 90%;
-    margin-bottom: 5%;
+    margin: 0 auto 2% auto;
 }
+
 .team-member img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
-@media screen and (max-width: 768px) {
+
+/* Tablet and up */
+@media screen and (min-width: 768px) {
     .team {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr 1fr 1fr;
-        row-gap: 2%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 5% 2%;
+        align-items: start;
     }
-    .team h2 {
-        grid-column: auto;
-        margin: 0 auto;
-        height: auto;
+
+    #heading {
+        grid-column: 1 / span 3;
+        max-width: 60%;
     }
+
     .team-member {
-        margin: 0 auto;
+        margin-bottom: 5%;
     }
 }
-/*Footer*/
+
+/* Footer */
 footer {
-    color: aliceblue;
+    color: #ffffff; /* Higher contrast than aliceblue */
     background-color: #032859;
+    position: relative;
 }
+
 .footer-content {
-    font-family: Josefin Sans;
+    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     padding: 2%;
 }
+
 .footer-content p {
     margin: 0;
 }
