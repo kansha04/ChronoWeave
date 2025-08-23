@@ -140,7 +140,7 @@ li, a, button {
     flex-direction: column;
     gap: 0.4rem;
     width: 80%;
-    margin: 5% auto;
+    margin: 1.5% auto;
 }
 .heading h2 {
     margin: 0 auto; 
