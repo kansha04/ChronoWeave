@@ -3,7 +3,7 @@
 }*/
 
 html {
-    font-size: 16px;
+    font-size: 20px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -242,7 +242,7 @@ footer {
 .footer-content {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
-    padding: 2%;
+    padding: 1%;
 }
 
 .footer-content p {
